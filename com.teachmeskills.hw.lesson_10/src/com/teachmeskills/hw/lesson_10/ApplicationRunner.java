@@ -17,18 +17,17 @@ import com.teachmeskills.hw.lesson_10.client.Client;
 public class ApplicationRunner {
     public static void main(String[] args) {
 
-        Card[] clientCards = {
-                new Card(20000, 1248, 111),
-                new Card(75000, 1248, 111),
-                new Card(20000, 1248, 111),
-                new Card(75000, 1248, 111),
-                new Card(75000, 1234, 112),
-                new Card(75000, 1234, 111),
-                new Card(20000, 1234, 111)
+        Card[] clientCards = {new Card(1000, 123, 111000),
+                              new Card(75000, 123, 111000),
+                              new Card(75000, 123, 111000),
+                              new Card(75000, 123, 111000),
+                              new Card(75000, 123, 112000),
+                              new Card(75000, 123, 111000),
+                              new Card(3000, 123, 111000)
         };
 
-        Client client = new Client("User1", clientCards);
+        Client client = new Client("Kirill", clientCards);
 
-        CardOperation.compareClientCards(client.getCards());
+        CardOperation.CompareClientCards(client.getCards());
     }
 }

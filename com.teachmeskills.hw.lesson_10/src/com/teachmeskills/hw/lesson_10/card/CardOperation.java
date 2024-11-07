@@ -2,7 +2,7 @@ package com.teachmeskills.hw.lesson_10.card;
 
 public class CardOperation {
 
-    public static void compareClientCards(Card[] cards) {
+    public static void CompareClientCards(Card[] cards) {
 
         if (cards != null && cards.length > 1) {
             int counter = 0;
@@ -26,12 +26,12 @@ public class CardOperation {
                 }
             }
             if (counter > 0) {
-                System.out.println("Identical cards" + "\nTotal identical cards: " + counter);
+                System.out.println("duplicate cards" + "\nTotal duplicate cards: " + counter);
             } else {
-                System.out.println("There is no identical cards.");
+                System.out.println("There is no duplicate cards.");
             }
         } else if (cards != null && cards.length == 1) {
-            System.out.println("No com.teachmeskills.hw.lesson_10.card to compare with ");
+            System.out.println("No card to compare with ");
         } else {
             System.out.println("Can't do anything :( ");
         }
